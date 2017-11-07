@@ -1,1 +1,1 @@
-# manoa-math
+# math-rush
