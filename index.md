@@ -221,8 +221,6 @@ The Stuff collection is defined in [imports/api/stuff/stuff.js](https://github.c
 
 The Stuff collection is initialized in [imports/startup/server/stuff.js](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/imports/startup/server/stuff.js).
 
-Note that this system uses autopublish to avoid the need to define publications and subscriptions.  That said, any templates presenting collection data must use `Template.subscriptionsReady` to ensure that subscription data is available before template rendering. See [imports/ui/pages/list-stuff-page.html](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/imports/ui/pages/list-stuff-page.html) for an example.
-
 ### CSS
 
 The application uses [Semantic UI](http://semantic-ui.com/), and installs one Meteor packages: `fabienb4:autoform-semantic-ui`.
@@ -243,10 +241,7 @@ Routing is defined in [imports/startup/client/router.js](https://github.com/ics-
 
 To implement the Add Stuff and Edit Stuff pages, the application uses [AutoForm](https://github.com/aldeed/meteor-autoform).
 
-To present the forms, the application uses the quickform component.  See [imports/ui/pages/add-stuff-page.html](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/imports/ui/pages/add-stuff-page.html) and [imports/ui/pages/edit-stuff-page.html](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/imports/ui/pages/edit-stuff-page.html).
-
-See [meteor-example-form](https://ics-software-engineering.github.io/meteor-example-form/) for a more sophisticated approach.
-
+To present the forms, the application uses the quickform component.  
 ### Authentication
 
 For authentication, the application uses the Meteor accounts-ui package, with some simple customization in [imports/startup/both/accounts-config.js](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/imports/startup/both/accounts-config.js).
