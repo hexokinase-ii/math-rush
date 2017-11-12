@@ -17,12 +17,13 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 //   },
 // });
 
-// FlowRouter.route('/', {
-//   name: 'Home_Page',
-//   action() {
-//     BlazeLayout.render('App_Body', { main: 'Home_Page' });
-//   },
-// });
+FlowRouter.route('/', {
+  name: 'Home_Page_Filler',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Home_Page_Filler' });
+  },
+});
+
 
 FlowRouter.route('/leaderboard-page', {
   name: 'Leaderboard_Page',
