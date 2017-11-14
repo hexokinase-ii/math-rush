@@ -1,76 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
-</head>
-<body>
-
-<div class="ui container">
-  <div class="ui basic segment">
-    <div class="ui dropdown labeled search icon button">
-      <i class="search icon"></i>
-      <span class="text">Select Subject</span>
-      <div class="menu">
-        <div class="item">Calculus 1</div>
-        <div class="item">Discrete Math</div>
-        <div class="item">Probability</div>
+<template name="Game_Types_Page">
+  <div class="ui container">
+    <div class="ui basic segment">
+      <div class="ui dropdown labeled search icon button">
+        <i class="search icon"></i>
+        <span class="text">Select Subject</span>
+        <div class="menu">
+          <div class="item">Calculus 1</div>
+          <div class="item">Discrete Math</div>
+          <div class="item">Probability</div>
+        </div>
       </div>
     </div>
-  </div>
 
 
-  <div class="ui grid">
-
-    <div class="four wide column">
-      <div class="ui compact segment">
-        <h2 class="ui header">Game Type 1</h2>
-        <img class="ui fluid centered image" src="https://i.ytimg.com/vi/-wkr_vf18cw/maxresdefault.jpg"/>
-        <p class="ui text">Here is a description of the game. It is a very nice game description, yes?</p>
-        <div class="ui label" style="margin: 2px;">2 players</div>
-        <div>
-          <div class="ui green button">Play</div>
-          <div class="ui blue button">Leaderboard</div>
-        </div>
-      </div> <!-- End of Segment -->
-    </div>
-
-    <div class="four wide column">
-      <div class="ui compact segment">
-        <h2 class="ui header">Game Type 2</h2>
-        <img class="ui fluid centered image" src="https://i.ytimg.com/vi/-wkr_vf18cw/maxresdefault.jpg"/>
-        <p class="ui text">Here is a description of the game. It is a very nice game description, yes?</p>
-        <div class="ui label" style="margin: 2px;">2 players</div>
-        <div>
-          <div class="ui green button">Play</div>
-          <div class="ui blue button">Leaderboard</div>
-        </div>
-      </div> <!-- End of Segment -->
-    </div>
-
-    <div class="four wide column">
-      <div class="ui compact segment">
-        <h2 class="ui header">Game Type 3</h2>
-        <img class="ui fluid centered image" src="https://i.ytimg.com/vi/-wkr_vf18cw/maxresdefault.jpg"/>
-        <p class="ui text">Here is a description of the game. It is a very nice game description, yes?</p>
-        <div class="ui label" style="margin: 2px;">2 players</div>
-        <div>
-          <div class="ui green button">Play</div>
-          <div class="ui blue button">Leaderboard</div>
-        </div>
-      </div> <!-- End of Segment -->
-    </div>
-
-
-    <div class="row">
+    <div class="ui grid">
 
       <div class="four wide column">
         <div class="ui compact segment">
-          <h2 class="ui header">Game Type 4</h2>
+          <h2 class="ui header">Game Type 1</h2>
           <img class="ui fluid centered image" src="https://i.ytimg.com/vi/-wkr_vf18cw/maxresdefault.jpg"/>
           <p class="ui text">Here is a description of the game. It is a very nice game description, yes?</p>
           <div class="ui label" style="margin: 2px;">2 players</div>
@@ -81,15 +28,54 @@
         </div> <!-- End of Segment -->
       </div>
 
+      <div class="four wide column">
+        <div class="ui compact segment">
+          <h2 class="ui header">Game Type 2</h2>
+          <img class="ui fluid centered image" src="https://i.ytimg.com/vi/-wkr_vf18cw/maxresdefault.jpg"/>
+          <p class="ui text">Here is a description of the game. It is a very nice game description, yes?</p>
+          <div class="ui label" style="margin: 2px;">2 players</div>
+          <div>
+            <div class="ui green button">Play</div>
+            <div class="ui blue button">Leaderboard</div>
+          </div>
+        </div> <!-- End of Segment -->
+      </div>
+
+      <div class="four wide column">
+        <div class="ui compact segment">
+          <h2 class="ui header">Game Type 3</h2>
+          <img class="ui fluid centered image" src="https://i.ytimg.com/vi/-wkr_vf18cw/maxresdefault.jpg"/>
+          <p class="ui text">Here is a description of the game. It is a very nice game description, yes?</p>
+          <div class="ui label" style="margin: 2px;">2 players</div>
+          <div>
+            <div class="ui green button">Play</div>
+            <div class="ui blue button">Leaderboard</div>
+          </div>
+        </div> <!-- End of Segment -->
+      </div>
+
+
+      <div class="row">
+
+        <div class="four wide column">
+          <div class="ui compact segment">
+            <h2 class="ui header">Game Type 4</h2>
+            <img class="ui fluid centered image" src="https://i.ytimg.com/vi/-wkr_vf18cw/maxresdefault.jpg"/>
+            <p class="ui text">Here is a description of the game. It is a very nice game description, yes?</p>
+            <div class="ui label" style="margin: 2px;">2 players</div>
+            <div>
+              <div class="ui green button">Play</div>
+              <div class="ui blue button">Leaderboard</div>
+            </div>
+          </div> <!-- End of Segment -->
+        </div>
+
+      </div>
     </div>
   </div>
-</div>
-</body>
 
-<script>
-  $('.ui.dropdown')
-      .dropdown();
-</script>
-
-</html>
-
+  <script>
+    $('.ui.dropdown')
+        .dropdown();
+  </script>
+</template>

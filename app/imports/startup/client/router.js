@@ -18,9 +18,16 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 // });
 
 FlowRouter.route('/', {
-  name: 'Home_Page_Filler',
+  name: 'Landing_Page',
   action() {
-    BlazeLayout.render('App_Body', { main: 'Home_Page_Filler' });
+    BlazeLayout.render('App_Body', { main: 'Landing_Page' });
+  },
+});
+
+FlowRouter.route('/game-types-page', {
+  name: 'Game_Types_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Game_Types_Page' });
   },
 });
 
