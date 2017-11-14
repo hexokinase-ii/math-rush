@@ -9,3 +9,48 @@ th {
 .ui.top.fixed.borderless.inverted.menu {
   background-color: steelblue ;
 }
+
+.landing-section-1 {
+  padding: 10px 10px 30px 10px;
+  background-color: blue;
+  color: yellow;
+}
+
+.landing-section-2 {
+  padding: 20px 10px 20px 10px;
+  background-color: yellow;
+  color:  blue;
+}
+
+.landing-section-3 {
+  padding: 20px 10px 30px 30px;
+  background-color: blue;
+  color: yellow;
+}
+
+.landing-section-1-welcome {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  text-align: center;
+}
+
+.landing-section-header {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+}
+
+.landing-section-header2 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  text-align: center;
+}
+
+.landing-page-image {
+  padding: 10px 10px 10px 10px;
+}
