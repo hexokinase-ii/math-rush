@@ -4,3 +4,5 @@ import './landing-page.html';
 // import './landing-page.js';
 import './game-types-page.html';
 // import './game-types-page.js';
+import './home-page.html';
+
