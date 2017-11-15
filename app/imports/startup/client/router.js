@@ -24,7 +24,6 @@ FlowRouter.route('/', {
   },
 });
 
-<<<<<<< HEAD
 FlowRouter.route('/home-page', {
   name: 'Home_Page',
   action() {
@@ -39,8 +38,6 @@ FlowRouter.route('/user-profile-page', {
   },
 });
 
-=======
->>>>>>> issue-05
 FlowRouter.route('/game-types-page', {
   name: 'Game_Types_Page',
   action() {
