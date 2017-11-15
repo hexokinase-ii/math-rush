@@ -5,3 +5,4 @@ import './landing-page.html';
 import './game-types-page.html';
 // import './game-types-page.js';
 import './home-page.html';
+import './user-profile-page.html'
