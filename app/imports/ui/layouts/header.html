@@ -1,9 +1,13 @@
 <template name="Header">
   <div class="ui top fixed borderless inverted menu">
     <div class="ui container">
-      <a class="item" href="{{pathFor 'Leaderboard_Page'}}"><h1>Math Rush</h1></a>
+      <a class="item" href="/"><h1 style="color: goldenrod">Math Rush</h1></a>
+      <a class="item" href="/home-page"><h2>Home</h2></a>
+      <a class="item" href="/user-profile-page"><h2>Your Profile</h2></a>
+      <a class="item" href="/leaderboard-page"><h2>Leaderboard</h2></a>
+      <a class="item" href="/game-types-page"><h2>Game Types</h2></a>
+      <!-- Leaving this stuff right now because will probably be necessary in future -->
         <!--{{#if currentUser}}-->
-      <!-- Leaving this stuff right now because will be necessary in future -->
       <!--<a class="{{ isActiveRoute 'Add_Stuff_Page'}} item" href="{{ pathFor 'Add_Stuff_Page' }}">Add Stuff </a>-->
       <!--<a class="{{ isActiveRoute 'List_Stuff_Page'}} item" href="{{ pathFor 'List_Stuff_Page' }}">List Stuff</a>-->
         <!--{{/if}}-->
