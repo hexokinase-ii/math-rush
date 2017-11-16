@@ -1,8 +1,13 @@
 <template name="Leaderboard_Page">
   <div class="ui container">
     <div class="ui menu">
-      <a class="item">
-        Back
+      <a class="{{isActiveRoute "Home_Page"}} item"
+         href="{{pathFor "Home_Page" username=routeUserName}}">
+        Home
+      </a>
+      <a class="{{isActiveRoute "User_Profile_Page"}} item"
+         href="{{pathFor "User_Profile_Page" username=routeUserName}}#active-subjects">
+        Active Subjects
       </a>
       <a class="ui pointing dropdown link item">
         <span class="text">Game 1</span>

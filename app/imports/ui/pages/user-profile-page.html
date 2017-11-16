@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="four wide column">
-        <hr style="width: 1px; height: 200px;" />
+        <hr style="width: 1px; height: 200px;"/>
       </div>
       <div class="four wide column">
         <div class="ui basic segment">
@@ -25,7 +25,7 @@
       </div>
 
     </div> <!-- End of grid -->
-    <h2 class="ui top attached header">Active Subjects</h2>
+    <h2 class="ui top attached header" name="active-subjects">Active Subjects</h2>
     <div class="ui attached segment">
       <div class="ui grid">
 
@@ -34,8 +34,15 @@
             <h3 class="ui header">Calculus 1</h3>
             <h4 class="ui header">Professor Coffee Joe </h4>
             <h4 class="ui header">Current Lesson: Derivatives</h4>
-            <div class="ui green button">Games</div>
-            <div class="ui red button">Scores</div>
+            <a class="{{isActiveRoute "Game_Types_Page"}} item"
+               href="{{pathFor "Game_Types_Page" username=routeUserName}}">
+              <div class="ui green button">Games</div>
+            </a>
+
+            <a class="{{isActiveRoute "Leaderboard_Page"}} item"
+               href="{{pathFor "Leaderboard_Page" username=routeUserName}}">
+              <div class="ui red button">Scores</div>
+            </a>
           </div>
         </div>
 
@@ -44,8 +51,14 @@
             <h3 class="ui header">Calculus 2</h3>
             <h4 class="ui header">Professor Ocha Tea </h4>
             <h4 class="ui header">Current Lesson: Higher Order Integrals</h4>
-            <div class="ui green button">Games</div>
-            <div class="ui red button">Scores</div>
+            <a class="{{isActiveRoute "Game_Types_Page"}} item"
+               href="{{pathFor "Game_Types_Page" username=routeUserName}}">
+              <div class="ui green button">Games</div>
+            </a>
+            <a class="{{isActiveRoute "Leaderboard_Page"}} item"
+               href="{{pathFor "Leaderboard_Page" username=routeUserName}}">
+              <div class="ui red button">Scores</div>
+            </a>
           </div>
         </div>
 
@@ -54,8 +67,14 @@
             <h3 class="ui header">Discrete Math</h3>
             <h4 class="ui header">Professor Sugi Water </h4>
             <h4 class="ui header">Current Lesson: Predicate Logic</h4>
-            <div class="ui green button">Games</div>
-            <div class="ui red button">Scores</div>
+            <a class="{{isActiveRoute "Game_Types_Page"}} item"
+               href="{{pathFor "Game_Types_Page" username=routeUserName}}">
+              <div class="ui green button">Games</div>
+            </a>
+            <a class="{{isActiveRoute "Leaderboard_Page"}} item"
+               href="{{pathFor "Leaderboard_Page" username=routeUserName}}">
+              <div class="ui red button">Scores</div>
+            </a>
           </div>
         </div>
 
@@ -64,8 +83,14 @@
             <h3 class="ui header">Probability</h3>
             <h4 class="ui header">Professor Milk Shake </h4>
             <h4 class="ui header">Current Lesson: Pidgeon Hole Principle</h4>
-            <div class="ui green button">Games</div>
-            <div class="ui red button">Scores</div>
+            <a class="{{isActiveRoute "Game_Types_Page"}} item"
+               href="{{pathFor "Game_Types_Page" username=routeUserName}}">
+              <div class="ui green button">Games</div>
+            </a>
+            <a class="{{isActiveRoute "Leaderboard_Page"}} item"
+               href="{{pathFor "Leaderboard_Page" username=routeUserName}}">
+              <div class="ui red button">Scores</div>
+            </a>
           </div>
         </div>
 
@@ -80,8 +105,14 @@
           <div class="ui segment">
             <h3 class="ui header">Math 101</h3>
             <h4 class="ui header">Professor Easy Peasy </h4>
-            <div class="ui green button">Games</div>
-            <div class="ui red button">Scores</div>
+            <a class="{{isActiveRoute "Game_Types_Page"}} item"
+               href="{{pathFor "Game_Types_Page" username=routeUserName}}">
+              <div class="ui green button">Games</div>
+            </a>
+            <a class="{{isActiveRoute "Leaderboard_Page"}} item"
+               href="{{pathFor "Leaderboard_Page" username=routeUserName}}">
+              <div class="ui red button">Scores</div>
+            </a>
           </div>
         </div>
 
@@ -89,8 +120,14 @@
           <div class="ui segment">
             <h3 class="ui header">Infinity and Beyond</h3>
             <h4 class="ui header">Professor Outta Disworld </h4>
-            <div class="ui green button">Games</div>
-            <div class="ui red button">Scores</div>
+            <a class="{{isActiveRoute "Game_Types_Page"}} item"
+               href="{{pathFor "Game_Types_Page" username=routeUserName}}">
+              <div class="ui green button">Games</div>
+            </a>
+            <a class="{{isActiveRoute "Leaderboard_Page"}} item"
+               href="{{pathFor "Leaderboard_Page" username=routeUserName}}">
+              <div class="ui red button">Scores</div>
+            </a>
           </div>
         </div>
 
@@ -98,8 +135,14 @@
           <div class="ui segment">
             <h3 class="ui header">Fractions</h3>
             <h4 class="ui header">Professor Manny Peaces </h4>
-            <div class="ui green button">Games</div>
-            <div class="ui red button">Scores</div>
+            <a class="{{isActiveRoute "Game_Types_Page"}} item"
+               href="{{pathFor "Game_Types_Page" username=routeUserName}}">
+              <div class="ui green button">Games</div>
+            </a>
+            <a class="{{isActiveRoute "Leaderboard_Page"}} item"
+               href="{{pathFor "Leaderboard_Page" username=routeUserName}}">
+              <div class="ui red button">Scores</div>
+            </a>
           </div>
         </div>
 
@@ -107,8 +150,14 @@
           <div class="ui segment">
             <h3 class="ui header">That Class</h3>
             <h4 class="ui header">Professor Him </h4>
-            <div class="ui green button">Games</div>
-            <div class="ui red button">Scores</div>
+            <a class="{{isActiveRoute "Game_Types_Page"}} item"
+               href="{{pathFor "Game_Types_Page" username=routeUserName}}">
+              <div class="ui green button">Games</div>
+            </a>
+            <a class="{{isActiveRoute "Leaderboard_Page"}} item"
+               href="{{pathFor "Leaderboard_Page" username=routeUserName}}">
+              <div class="ui red button">Scores</div>
+            </a>
           </div>
         </div>
 
