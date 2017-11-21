@@ -1,7 +1,20 @@
 <template name="Landing_Page">
   <div class="landing-section-1">
-    <h1 class="landing-section-1-welcome">Math Rush</h1>
-    <h2 class="landing-section-header">A live multiplayer math game.<br />Made by college students, for college students.</h2>
+    <div class="ui grid">
+
+      <div class="row">
+        <div class="ui right aligned sixteen wide column">
+          {{> Cas_Login }}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="landing-section-1">
+          <h1 class="landing-section-1-welcome">Math Rush</h1>
+          <h2 class="landing-section-header">A live multiplayer math game.<br />Made by college students, for college students.</h2>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="landing-section-2">
