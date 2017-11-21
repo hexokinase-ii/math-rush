@@ -1,3 +1,3 @@
-import './accounts';
-import './initialize-database';
-import './publications';
+import './accounts.js';
+import './users.js';
+import './game1.js';

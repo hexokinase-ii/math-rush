@@ -1,76 +1,60 @@
 import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
-import { $ } from 'meteor/jquery';
 
+// Will probably need the 2 things below later
 
-/*                        LANDING ROUTE                       */
+// FlowRouter.route('/', {
+//   name: 'Home_Page',
+//   action() {
+//     BlazeLayout.render('App_Body', { main: 'Home_Page' });
+//   },
+// });
 
-export const landingPageRouteName = 'Landing_Page';
+// FlowRouter.route('/stuff/:_id', {
+//   name: 'Edit_Stuff_Page',
+//   action() {
+//     BlazeLayout.render('App_Body', { main: 'Edit_Stuff_Page' });
+//   },
+// });
+
 FlowRouter.route('/', {
-  name: landingPageRouteName,
+  name: 'Landing_Page',
   action() {
-    BlazeLayout.render('Landing_Layout', { main: landingPageRouteName });
+    BlazeLayout.render('App_Body', { main: 'Landing_Page' });
   },
 });
 
-/*                        DIRECTORY ROUTE                       */
-
-function addDirectoryBodyClass() {
-  $('body').addClass('directory-page-body');
-}
-
-function removeDirectoryBodyClass() {
-  $('body').removeClass('directory-page-body');
-}
-
-export const directoryPageRouteName = 'Directory_Page';
-FlowRouter.route('/directory', {
-  name: directoryPageRouteName,
+FlowRouter.route('/home-page', {
+  name: 'Home_Page',
   action() {
-    BlazeLayout.render('Directory_Layout', { main: directoryPageRouteName });
-  },
-  triggersEnter: [addDirectoryBodyClass],
-  triggersExit: [removeDirectoryBodyClass],
-});
-
-
-/*                        USER ROUTES                      */
-
-
-function addUserBodyClass() {
-  $('body').addClass('user-layout-body');
-}
-
-function removeUserBodyClass() {
-  $('body').removeClass('user-layout-body');
-}
-
-const userRoutes = FlowRouter.group({
-  prefix: '/:username',
-  name: 'userRoutes',
-  triggersEnter: [addUserBodyClass],
-  triggersExit: [removeUserBodyClass],
-});
-
-export const profilePageRouteName = 'Profile_Page';
-userRoutes.route('/profile', {
-  name: profilePageRouteName,
-  action() {
-    BlazeLayout.render('User_Layout', { main: profilePageRouteName });
+    BlazeLayout.render('App_Body', { main: 'Home_Page' });
   },
 });
 
-export const filterPageRouteName = 'Filter_Page';
-userRoutes.route('/filter', {
-  name: filterPageRouteName,
+FlowRouter.route('/user-profile-page', {
+  name: 'User_Profile_Page',
   action() {
-    BlazeLayout.render('User_Layout', { main: filterPageRouteName });
+    BlazeLayout.render('App_Body', { main: 'User_Profile_Page' });
   },
 });
 
-/*                        MISC ROUTES                       */
+FlowRouter.route('/game-types-page', {
+  name: 'Game_Types_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Game_Types_Page' });
+  },
+});
+
+
+FlowRouter.route('/leaderboard-page', {
+  name: 'Leaderboard_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Leaderboard_Page' });
+  },
+});
+
 FlowRouter.notFound = {
   action() {
-    BlazeLayout.render('Page_Not_Found');
+    BlazeLayout.render('App_Body', { main: 'App_Not_Found' });
   },
 };
