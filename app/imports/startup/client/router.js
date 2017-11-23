@@ -68,6 +68,14 @@ userRoutes.route('/filter', {
   },
 });
 
+export const gameTypesPageRouteName = 'Game-Types-Page';
+userRoutes.route('/gametypes', {
+  name: gameTypesPageRouteName,
+  action() {
+    BlazeLayout.render('Game_Types_Layout', { main: gameTypesPageRouteName });
+  },
+});
+
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
   action() {
