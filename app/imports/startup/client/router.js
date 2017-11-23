@@ -13,6 +13,14 @@ FlowRouter.route('/', {
   },
 });
 
+export const gameTypesPageRouteName = 'Game_Types_Page';
+FlowRouter.route('/gametypes', {
+  name: gameTypesPageRouteName,
+  action() {
+    BlazeLayout.render('Game_Types_Layout', { main: gameTypesPageRouteName });
+  },
+});
+
 /*                        DIRECTORY ROUTE                       */
 
 function addDirectoryBodyClass() {
@@ -68,13 +76,6 @@ userRoutes.route('/filter', {
   },
 });
 
-export const gameTypesPageRouteName = 'Game-Types-Page';
-userRoutes.route('/gametypes', {
-  name: gameTypesPageRouteName,
-  action() {
-    BlazeLayout.render('Game_Types_Layout', { main: gameTypesPageRouteName });
-  },
-});
 
 /*                        MISC ROUTES                       */
 FlowRouter.notFound = {
