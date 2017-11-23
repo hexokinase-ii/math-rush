@@ -13,19 +13,10 @@ FlowRouter.route('/', {
   },
 });
 
-export const gameTypesPageRouteName = 'Game_Types_Page';
-FlowRouter.route('/gametypes', {
-  name: gameTypesPageRouteName,
+FlowRouter.route('/leaderboard', {
+  name: 'Leaderboard_Layout',
   action() {
-    BlazeLayout.render('Game_Types_Layout', { main: gameTypesPageRouteName });
-  },
-});
-
-export const userProfilePageRouteName = 'User_Profile_Page';
-FlowRouter.route('/userprofile', {
-  name: userProfilePageRouteName,
-  action() {
-    BlazeLayout.render('User_Profile_Layout', { main: userProfilePageRouteName });
+    BlazeLayout.render('Leaderboard_Layout', { main: 'Leaderboard_Page' });
   },
 });
 
