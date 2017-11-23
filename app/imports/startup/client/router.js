@@ -13,6 +13,13 @@ FlowRouter.route('/', {
   },
 });
 
+FlowRouter.route('/leaderboard', {
+  name: 'Leaderboard_Layout',
+  action() {
+    BlazeLayout.render('Leaderboard_Layout', { main: 'Leaderboard_Page' });
+  },
+});
+
 /*                        DIRECTORY ROUTE                       */
 
 function addDirectoryBodyClass() {
