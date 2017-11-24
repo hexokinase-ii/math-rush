@@ -8,4 +8,3 @@ Template.App_Body.helpers({
 
 Template.App_Body.events({
 });
-w
