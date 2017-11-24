@@ -1,2 +1,2 @@
 import './game-types-page.html';
-import './game-types-page.js';
+import './user-profile-page.js';
