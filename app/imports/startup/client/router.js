@@ -13,6 +13,7 @@ FlowRouter.route('/', {
   },
 });
 
+/*  vvvv  MOVE THIS STUFF AFTER YOU INCLUDE THE AUTHORIZATION ASPECT */
 export const gameTypesPageRouteName = 'Game_Types_Page';
 FlowRouter.route('/gametypes', {
   name: gameTypesPageRouteName,
@@ -20,6 +21,15 @@ FlowRouter.route('/gametypes', {
     BlazeLayout.render('Game_Types_Layout', { main: gameTypesPageRouteName });
   },
 });
+
+export const userProfilePageRouteName = 'User_Profile_Page';
+FlowRouter.route()('/userprofile', {
+  name: userProfilePageRouteName,
+  action() {
+    BlazeLayout.render('User_Profile_Layout', { main: userProfilePageRouteName });
+  },
+});
+/*  ^^^^ MOVE THIS STUFF AFTER YOU INCLUDE THE AUTHORIZATION ASPECT */
 
 /*                        DIRECTORY ROUTE                       */
 
