@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3e739fb-46e9-4a8c-93bf-1705371d264a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/ui/layouts/profile/footer.html" afterPath="$PROJECT_DIR$/app/imports/ui/layouts/profile/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/ui/layouts/profile/header.html" afterPath="$PROJECT_DIR$/app/imports/ui/layouts/profile/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/imports/ui/layouts/profile/user-profile-layout.html" afterPath="$PROJECT_DIR$/app/imports/ui/layouts/profile/user-profile-layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/client/main.js" afterPath="$PROJECT_DIR$/app/client/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,17 +24,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/client/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="375">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user-profile-layout.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user-profile-layout.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/profile/user-profile-layout.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -123,10 +122,10 @@
         <option value="$PROJECT_DIR$/app/imports/ui/pages/gametypes/index.js" />
         <option value="$PROJECT_DIR$/app/imports/startup/client/router.js" />
         <option value="$PROJECT_DIR$/app/imports/ui/layouts/profile/index.js" />
-        <option value="$PROJECT_DIR$/app/client/main.js" />
         <option value="$PROJECT_DIR$/app/imports/ui/layouts/profile/user-profile-layout.html" />
         <option value="$PROJECT_DIR$/app/imports/ui/layouts/profile/header.html" />
         <option value="$PROJECT_DIR$/app/imports/ui/layouts/profile/footer.html" />
+        <option value="$PROJECT_DIR$/app/client/main.js" />
       </list>
     </option>
   </component>
@@ -611,14 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/client/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/imports/ui/layouts/gametypes/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -656,6 +647,16 @@
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/client/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
