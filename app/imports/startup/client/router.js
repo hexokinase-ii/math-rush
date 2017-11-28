@@ -21,6 +21,14 @@ FlowRouter.route('/gametypes', {
   },
 });
 
+export const homePageRouteName = 'Home_Page';
+FlowRouter.route('/home', {
+  name: homePageRouteName,
+  action() {
+    BlazeLayout.render('Home_Layout', { main: homePageRouteName });
+  },
+});
+
 export const userProfilePageRouteName = 'User_Profile_Page';
 FlowRouter.route('/userprofile', {
   name: userProfilePageRouteName,
