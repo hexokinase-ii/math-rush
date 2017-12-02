@@ -37,6 +37,14 @@ FlowRouter.route('/userprofile', {
   },
 });
 
+export const game1PageRouteName = 'Game1_Page';
+FlowRouter.route('/game1', {
+  name: game1PageRouteName,
+  action() {
+    BlazeLayout.render('Game1_Layout', { main: game1PageRouteName });
+  },
+});
+
 /*                        DIRECTORY ROUTE                       */
 
 function addDirectoryBodyClass() {
