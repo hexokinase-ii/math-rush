@@ -145,6 +145,42 @@
           "picture": "/images/casanova.jpg"
         }
       ]
+    },
+    {
+      "name": "AddSubtractCollection",
+      "contents": [
+        {
+          "num1": 1,
+          "num2": 1,
+          "operator:": "+",
+          "answer": 2
+        },
+        {
+          "num1": 100,
+          "num2": 77,
+          "operator:": "-",
+          "answer": 23
+        },
+         {
+          "num1": 18,
+          "num2": 19,
+          "operator:": "-",
+          "answer": -1
+        },
+         {
+          "num1": 34,
+          "num2": 88,
+          "operator:": "+",
+          "answer": 122
+        },
+         {
+          "num1": 99,
+          "num2": 1000,
+          "operator:": "-",
+          "answer": -901
+        }
+
+      ]
     }
   ]
 }
