@@ -12,6 +12,7 @@ import '/imports/ui/layouts/gametypes';
 import '/imports/ui/layouts/profile';
 import '/imports/ui/layouts/home';
 import '/imports/ui/layouts/game1';
+import '/imports/ui/layouts/leaderboard';
 
 import '/imports/ui/pages/directory';
 import '/imports/ui/pages/filter';
@@ -21,6 +22,7 @@ import '/imports/ui/pages/gametypes';
 import '/imports/ui/pages/profile';
 import '/imports/ui/pages/home';
 import '/imports/ui/pages/game1';
+import '/imports/ui/pages/leaderboard';
 
 
 import '/imports/ui/stylesheets/style.css';
