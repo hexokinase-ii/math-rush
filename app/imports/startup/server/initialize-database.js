@@ -1,7 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import { Profiles } from '/imports/api/profile/ProfileCollection';
 import { Interests } from '/imports/api/interest/InterestCollection';
-import { AddSubtract } from '/imports/api/interest/AddSubtractCollection';
+import { AddSubtract } from '/imports/api/addsubtract/AddSubtractCollection';
 import { _ } from 'meteor/underscore';
 
 /* global Assets */

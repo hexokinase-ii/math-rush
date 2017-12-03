@@ -117,5 +117,5 @@ class AddSubtractCollection extends BaseCollection {
 /**
  * Provides the singleton instance of this class to all other entities.
  */
-export const AddSubtracts = new AddSubtractCollection();
+export const AddSubtract = new AddSubtractCollection();
 
