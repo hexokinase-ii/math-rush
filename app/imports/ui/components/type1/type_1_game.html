@@ -1,0 +1,23 @@
+<template name="type_1_game">
+
+  <div class="card">
+    <div class="content">
+      <div class="ui grid">
+        <div class="row">
+          {{ addsub.num1 }}
+          {{ addsub.operator }}
+          {{ addsub.num2 }}
+        </div>
+        <div class="row">
+          {{> Text_Form_Control label="Answer" placeholder="Type Answer" value=addsub.answer errorMessage=(fieldError
+              "answer")}}
+        </div>
+      </div>
+    </div>
+
+    <div class="extra content">
+      <button class="ui button" type="submit">Check Answer</button>
+    </div>
+  </div>
+
+</template>
