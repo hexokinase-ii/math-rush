@@ -15,19 +15,19 @@ Template.type_1_game.helpers({
     return true;
   },
 });
+
 // Template.Filter_Page.onCreated(function onCreated() {
 //   this.subscribe(Interests.getPublicationName());
 //   this.subscribe(Profiles.getPublicationName());
 //   this.messageFlags = new ReactiveDict();
 //   this.messageFlags.set(selectedInterestsKey, undefined);
 // });
-
 Template.type_1_game.event({
-  'submit .check-answer'(event, instance) {
+  'submit .check-answer'(event) {
     event.preventDefault();
-    // if(){
-    //
-    // }
+    if (num1 + num2 === answer) {
+      console.log('num1+num2 = answer');
+    }
   },
 });
 

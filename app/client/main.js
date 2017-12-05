@@ -3,7 +3,7 @@ import '/imports/ui/components/form-controls';
 import '/imports/ui/components/directory';
 import '/imports/ui/components/user';
 import '/imports/ui/components/landing';
-import '/imports/ui/components/type1';
+
 
 import '/imports/ui/layouts/directory';
 import '/imports/ui/layouts/landing';
@@ -30,3 +30,4 @@ import '/imports/api/profile';
 import '/imports/api/interest';
 import '/imports/api/addsubtract';
 
+import '/imports/ui/components/type1';
