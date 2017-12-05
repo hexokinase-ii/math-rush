@@ -48,7 +48,7 @@ class AddSubtractCollection extends BaseCollection {
    * @param interestID An interest docID.
    * @returns { String } An interest name.
    * @throws { Meteor.Error} If the interest docID cannot be found.
-   *
+   */
   findName(interestID) {
     this.assertDefined(interestID);
     return this.findDoc(interestID).name;
@@ -59,7 +59,7 @@ class AddSubtractCollection extends BaseCollection {
    * @param interestIDs A list of AddSubtract docIDs.
    * @returns { Array }
    * @throws { Meteor.Error} If any of the instanceIDs cannot be found.
-   *
+   */
   findNames(interestIDs) {
     return interestIDs.map(interestID => this.findName(interestID));
   }
@@ -67,7 +67,7 @@ class AddSubtractCollection extends BaseCollection {
   /**
    * Throws an error if the passed name is not a defined AddSubtract name.
    * @param name The name of an interest.
-   *
+   */
   assertName(name) {
     this.findDoc(name);
   }
@@ -75,7 +75,7 @@ class AddSubtractCollection extends BaseCollection {
   /**
    * Throws an error if the passed list of names are not all AddSubtract names.
    * @param names An array of (hopefully) AddSubtract names.
-   *
+   */
   assertNames(names) {
     _.each(names, name => this.assertName(name));
   }
@@ -85,7 +85,7 @@ class AddSubtractCollection extends BaseCollection {
    * @param { String } name An interest name.
    * @returns { String } The docID associated with the name.
    * @throws { Meteor.Error } If name is not associated with an AddSubtract.
-   *
+   */
   findID(name) {
     return (this.findDoc(name)._id);
   }
@@ -96,7 +96,7 @@ class AddSubtractCollection extends BaseCollection {
    * @param { String[] } names An array of interest names.
    * @returns { String[] } The docIDs associated with the names.
    * @throws { Meteor.Error } If any instance is not an AddSubtract name.
-   *
+   */
   findIDs(names) {
     return (names) ? names.map((instance) => this.findID(instance)) : [];
   }
