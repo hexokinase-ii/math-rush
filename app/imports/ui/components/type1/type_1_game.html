@@ -1,15 +1,16 @@
 <template name="type_1_game">
-  From the type_1 Template
   <div class="card">
     <div class="content">
       <div class="ui grid">
         <div class="row">
-          {{ addsub.num1 }}
-          {{ addsub.operator }}
-          {{ addsub.num2 }}
+          <p class=" " style="font-size: x-large">
+            {{ addsub.num1 }}
+            {{ addsub.operator }}
+            {{ addsub.num2 }}
+          </p>
         </div>
         <div class="row">
-          {{> Text_Form_Control label="Answer" placeholder="Type Answer" value=addsub.answer errorMessage=(fieldError
+          {{> Text_Form_Control placeholder="Type Answer" errorMessage=(fieldError
               "answer")}}
         </div>
       </div>

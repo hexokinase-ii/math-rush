@@ -1,22 +1,11 @@
 <template name="Game1_Page">
   <div class="ui container">
-
-    {{ test }}
-    {{> type_1_game addsub='' }}
-
     {{#if Template.subscriptionsReady}}
       <div style="margin-top: 10px" class="ui container">
         <div class="ui cards">
-          Subscriptions Ready
-
           {{#each addsub in addsubtract}}
-            addsub
-            {{ addsub }}
-          addsubtract
-            {{ addsubtract }}
             {{> type_1_game addsub=addsub }}
           {{/each}}
-
         </div>
       </div>
     {{/if}}
