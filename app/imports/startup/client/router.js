@@ -37,6 +37,14 @@ FlowRouter.route('/userprofile', {
   },
 });
 
+export const leaderboardPageRouteName = 'Leaderboard_Page';
+FlowRouter.route('/leaderboard', {
+  name: leaderboardPageRouteName,
+  action() {
+    BlazeLayout.render('Leaderboard_Layout', { main: leaderboardPageRouteName });
+  },
+});
+
 export const game1PageRouteName = 'Game1_Page';
 FlowRouter.route('/game1', {
   name: game1PageRouteName,
