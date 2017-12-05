@@ -1,40 +1,53 @@
 <template name="Landing_Page">
 
-  <div class="landing-section-1">
+  <body style="background-color: #F2EEE2">
+  <div class="Header-Section">
     <div class="ui grid">
-
       <div class="row">
-        <div class="ui right aligned sixteen wide column">
-          {{> Cas_Login }}
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="ui center aligned sixteen wide column">
-          <h1 class="landing-section-1-welcome">Math Rush</h1>
-          <h2 class="landing-section-header">A live multiplayer math game.<br />Made by college students, for college students.</h2>
+        <div class="column">
+          <h1>Math Rush</h1>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="landing-section-2">
-    <div class="ui grid">
-      <div class="ui eight wide column">
-        <h3 class="landing-section-header2">1. Choose your topic.<br /><br />2. Play!</h3>
-      </div>
-      <div class="ui eight wide column">
-        <img class="ui centered image" src="https://i0.wp.com/www.parkingspace23.com/wp-content/uploads/2014/06/basic-math.png">
+    <div class="Landing-Section-2">
+      <div class="ui grid">
+        <div class="ui three column row">
+
+          <div class="column">
+            <img class="ui centered large circular bordered fluid image"
+                 src="/images/pic1.jpg">
+            <h2>Create your personal student profile</h2>
+            <h3>Customize your profile with the classes you are taking</h3>
+          </div>
+
+          <div class="column">
+            <img class="ui centered large circular bordered fluid image"
+                 src="/images/pic3.jpg">
+            <h2>Play live multiplayer math games</h2>
+            <h3>Choose your subject and battle other players live</h3>
+          </div>
+
+          <div class="column">
+            <img class="ui centered large circular bordered fluid image"
+                 src="/images/pic2.jpg">
+            <h2>Find other students with your interests</h2>
+            <h3>Check who's doing well in the leaderboard and connect with them</h3>
+          </div>
+
+        </div>
+
+        <div class="ui one column row">
+          <div class="column">
+             <h4>Login with your UH username and password to get started</h4>
+          </div>
+        </div>
+
       </div>
     </div>
+
   </div>
 
-  <div class="landing-section-5">
-    <div class="ui grid">
-      <div class="ui center aligned sixteen wide column">
-        {{> Cas_Login size="large"}}
-      </div>
-    </div>
-  </div>
+  </body>
 
 </template>
