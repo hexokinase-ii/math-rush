@@ -12,6 +12,7 @@ class AddSubtractCollection extends BaseCollection {
    * Creates the AddSubtract collection.
    */
   constructor() {
+    console.log('Constructor AddSubtract Collection');
     super('AddSubtract', new SimpleSchema({
       num1: { type: Number },
       num2: { type: Number },
@@ -24,7 +25,8 @@ class AddSubtractCollection extends BaseCollection {
     check(num2, Number);
     check(operator, String);
     check(answer, Number);
-
+    console.log('Operator');
+    console.log(operator);
     const addsubtract = {
       '+': function (a, b) {
         return a + b;
@@ -34,9 +36,9 @@ class AddSubtractCollection extends BaseCollection {
       },
     };
 
-    if (operator !== '+' || operator !== '-') {
-      throw new Meteor.Error(`${operator} is not addition or subtraction`);
-    }
+    // if (!(operator === '+') || !(operator === '-')) {
+    //   throw new Meteor.Error(`${operator} is not addition or subtraction`);
+    // }
     if (addsubtract[operator](num1, num2) !== answer) {
       throw new Meteor.Error(`${answer} is not the correct answer to this operation`);
     }
