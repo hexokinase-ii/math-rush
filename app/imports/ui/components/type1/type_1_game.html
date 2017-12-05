@@ -4,9 +4,11 @@
       <div class="ui grid">
         <div class="row">
           <p class=" " style="font-size: x-large">
-            {{ addsub.num1 }}
-            {{ addsub.operator }}
-            {{ addsub.num2 }}
+            {{#if initializevalues n1=addsub.num1 n2=addsum.num2 answ= addsum.answer }}
+              {{ addsub.num1 }}
+              {{ addsub.operator }}
+              {{ addsub.num2 }}
+            {{/if}}
           </p>
         </div>
         <div class="row">
@@ -17,7 +19,7 @@
     </div>
 
     <div class="extra content">
-      <button class="ui button" type="submit">Check Answer</button>
+      <button class="ui button check-answer" type="submit">Check Answer</button>
     </div>
   </div>
 

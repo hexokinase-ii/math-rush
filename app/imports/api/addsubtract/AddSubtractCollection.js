@@ -12,7 +12,6 @@ class AddSubtractCollection extends BaseCollection {
    * Creates the AddSubtract collection.
    */
   constructor() {
-    console.log('Constructor AddSubtract Collection');
     super('AddSubtract', new SimpleSchema({
       num1: { type: Number },
       num2: { type: Number },
@@ -25,8 +24,7 @@ class AddSubtractCollection extends BaseCollection {
     check(num2, Number);
     check(operator, String);
     check(answer, Number);
-    console.log('Operator');
-    console.log(operator);
+
     const addsubtract = {
       '+': function (a, b) {
         return a + b;
