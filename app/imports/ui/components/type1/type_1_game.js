@@ -23,10 +23,13 @@ Template.type_1_game.helpers({
 
 Template.type_1_game.event({
   'click .check-answer'(event) {
-    event.preventDefault();
-    if (addSub.answer == addSub.userAnswer) {
-      console.log('num1+num2 = ');
-      console.log(useranswer);
+
+    const answer = event.target.Answer.value;
+    console.log(answer);
+    console.log(addSub.answer);
+    if (answer == addSub.answer) {
+      console.log('We did it: num1+num2 = ');
+      console.log(addSub.userAnswer);
     }
   },
 });

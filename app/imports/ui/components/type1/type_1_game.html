@@ -1,11 +1,12 @@
 <template name="type_1_game">
   <div class="card">
+    <form class="check-answer {{ successClass }} {{ errorClass }}">
     <div class="content">
       <div class="ui grid">
         <div class="row">
         <p class=" " style="font-size: x-large">
           {{#if initializevalues addsub }}
-            <div style="padding-left: 5px">
+            <div style="padding-left: 20px">
               {{ addsub.num1 }}
               {{ addsub.operator }}
               {{ addsub.num2 }}
@@ -14,19 +15,18 @@
           {{/if}}
           </p>
         </div>
-        <div class="row">
-          <var id="input">
-            {{> Text_Form_Control placeholder="Type Answer" value=addsub.userAnswer errorMessage=(fieldError
+        <div class="row" style="padding-left: 20px; padding-bottom: 20px">
+            {{> Text_Form_Control label="Answer" placeholder="Type Answer" value=addsub.userAnswer errorMessage=(fieldError
               "answer")}}
-          </var>
 
         </div>
       </div>
     </div>
 
     <div class="extra content">
-      <button class="ui button check-answer" type="button">Check Answer</button>
+      <button class="ui button check-answer" style="padding-bottom: 10px" type="click">Check Answer</button>
     </div>
+    </form>
   </div>
 
 </template>

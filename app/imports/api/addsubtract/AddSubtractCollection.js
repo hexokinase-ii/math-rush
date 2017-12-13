@@ -17,10 +17,10 @@ class AddSubtractCollection extends BaseCollection {
       num2: { type: Number },
       operator: { type: String },
       answer: { type: Number },
-      userAnswer: { type: Number },
+      userAnswer: { type: Number, optional: true },
     }, { tracker: Tracker }));
   }
-  define({ num1, num2, operator, answer }) {
+  define({ num1, num2, operator, answer, userAnswer }) {
     check(num1, Number);
     check(num2, Number);
     check(operator, String);
@@ -42,7 +42,7 @@ class AddSubtractCollection extends BaseCollection {
     if (addsubtract[operator](num1, num2) !== answer) {
       throw new Meteor.Error(`${answer} is not the correct answer to this operation`);
     }
-    return this._collection.insert({ num1, num2, operator, answer });
+    return this._collection.insert({ num1, num2, operator, answer, userAnswer });
   }
 /**
   /**
