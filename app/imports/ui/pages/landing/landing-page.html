@@ -1,11 +1,13 @@
 <template name="Landing_Page">
 
-  <body style="background-color: #F2EEE2">
+  <body>
   <div class="Header-Section">
+    <div class="ui left header">
+      {{> Cas_Login }}
+    </div>
     <div class="ui grid">
       <div class="row">
         <div class="column">
-          {{> Cas_Login }}
           <h1 class="ui heading1">Math Rush</h1>
         </div>
       </div>
@@ -40,7 +42,7 @@
 
         <div class="ui one column row">
           <div class="column">
-             <h4 class="ui heading4">Login with your UH username and password to get started</h4>
+            <h4 class="ui heading4">Login with your UH username and password to get started</h4>
           </div>
         </div>
 
