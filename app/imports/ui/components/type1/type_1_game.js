@@ -1,17 +1,18 @@
 import { Template } from 'meteor/templating';
 
 Template.type_1_game.onCreated(function onCreated() {
-  this.subscribe();
 });
+
 let num1;
 let num2;
 let answer;
+
 Template.type_1_game.helpers({
-  initializevalues(n1, n2, answ) {
-    num1 = n1;
-    num2 = n2;
-    answer = answ;
-    console.log(answ);
+  initializevalues: function (addsub) {
+    num1 = addsub.num1;
+    num2 = addsub.num2;
+    answer = addsub.answer;
+    console.log(answer);
     return true;
   },
 });
@@ -22,14 +23,15 @@ Template.type_1_game.helpers({
 //   this.messageFlags = new ReactiveDict();
 //   this.messageFlags.set(selectedInterestsKey, undefined);
 // });
-Template.type_1_game.event({
-  'submit .check-answer'(event) {
-    event.preventDefault();
-    if (num1 + num2 === answer) {
-      console.log('num1+num2 = answer');
-    }
-  },
-});
+
+// Template.type_1_game.event({
+//   'click .check-answer'(event) {
+//     event.preventDefault();
+//     if (num1 + num2 === answer) {
+//       console.log('num1+num2 = answer');
+//     }
+//   },
+// });
 
 // Template.Filter_Page.events({
 //   'submit .filter-data-form'(event, instance) {
