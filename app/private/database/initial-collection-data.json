@@ -178,8 +178,13 @@
           "num2": 1000,
           "operator": "-",
           "answer": -901
+        },
+        {
+          "num1": 777,
+          "num2": 555,
+          "operator": "+",
+          "answer": 1332
         }
-
       ]
     }
   ]
