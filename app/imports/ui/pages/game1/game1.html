@@ -1,11 +1,17 @@
 <template name="Game1_Page">
-  <div class="ui container">
+  <div class="ui container" style="padding-top: 70px">
     {{#if Template.subscriptionsReady}}
       <div style="margin-top: 10px" class="ui container">
         <div class="ui cards">
           {{#each addsub in addsubtract}}
             {{> type_1_game addsub=addsub }}
           {{/each}}
+        </div>
+        <div class="ui container" style="padding-top: 3%">
+          <a class="{{isActiveRoute "Leaderboard_Page"}} item"
+             href="{{pathFor "Leaderboard_Page" username=routeUserName}}">
+            <div class="ui green button">Finish</div>
+          </a>
         </div>
       </div>
     {{/if}}

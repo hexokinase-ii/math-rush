@@ -17,6 +17,7 @@ class AddSubtractCollection extends BaseCollection {
       num2: { type: Number },
       operator: { type: String },
       answer: { type: Number },
+      userAnswer: { type: Number },
     }, { tracker: Tracker }));
   }
   define({ num1, num2, operator, answer }) {
@@ -24,6 +25,7 @@ class AddSubtractCollection extends BaseCollection {
     check(num2, Number);
     check(operator, String);
     check(answer, Number);
+
 
     const addsubtract = {
       '+': function (a, b) {

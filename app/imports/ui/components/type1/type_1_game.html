@@ -3,23 +3,29 @@
     <div class="content">
       <div class="ui grid">
         <div class="row">
-          <p class=" " style="font-size: x-large">
-            {{#if initializevalues n1=addsub.num1 n2=addsum.num2 answ= addsum.answer }}
+        <p class=" " style="font-size: x-large">
+          {{#if initializevalues addsub }}
+            <div style="padding-left: 5px">
               {{ addsub.num1 }}
               {{ addsub.operator }}
               {{ addsub.num2 }}
-            {{/if}}
+
+            </div>
+          {{/if}}
           </p>
         </div>
         <div class="row">
-          {{> Text_Form_Control placeholder="Type Answer" errorMessage=(fieldError
+          <var id="input">
+            {{> Text_Form_Control placeholder="Type Answer" value=addsub.userAnswer errorMessage=(fieldError
               "answer")}}
+          </var>
+
         </div>
       </div>
     </div>
 
     <div class="extra content">
-      <button class="ui button check-answer" type="submit">Check Answer</button>
+      <button class="ui button check-answer" type="button">Check Answer</button>
     </div>
   </div>
 
