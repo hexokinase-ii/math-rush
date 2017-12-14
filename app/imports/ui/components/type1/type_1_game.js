@@ -12,34 +12,34 @@ Template.type_1_game.helpers({
     addSub = addsub;
     return true;
   },
-
-  userinput: function() {
-    console.log('userinput function');
-    const value = document.getElementById('inputField').value;
-    if(value !== addSub.answer) {
-      document.getElementById('result').innerHTML = "Try Again";
-    }
-    else{
-      document.getElementById('result').innerHTML = "Correct";
-    }
-    return true;
-  }
-});
-
-Template.type_1_game.events({
-  'click .check-answer'(event) {
-   addSub.userAnswer = event.target.value;
-   console.log(addSub.userAnswer);
-   console.log('On input');
-  },
-  'click .check-answer'(event, instance) {
-    addSub.userAnswer = event.target.value;
-    console.log(addSub.userAnswer);
-  },
-  'blur .test'(){
-    console.log('test');
-    console.log(document.getElementById('inputField').value);
-  },
+//
+//   userinput: function() {
+//     console.log('userinput function');
+//     const value = document.getElementById('inputField').value;
+//     if(value !== addSub.answer) {
+//       document.getElementById('result').innerHTML = "Try Again";
+//     }
+//     else{
+//       document.getElementById('result').innerHTML = "Correct";
+//     }
+//     return true;
+//   }
+// });
+//
+// Template.type_1_game.events({
+//   'click .check-answer'(event) {
+//    addSub.userAnswer = event.target.value;
+//    console.log(addSub.userAnswer);
+//    console.log('On input');
+//   },
+//   'click .check-answer'(event, instance) {
+//     addSub.userAnswer = event.target.value;
+//     console.log(addSub.userAnswer);
+//   },
+//   'blur .test'(){
+//     console.log('test');
+//     console.log(document.getElementById('inputField').value);
+//   },
 
 });
 
