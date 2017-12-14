@@ -12,26 +12,35 @@ Template.type_1_game.helpers({
     addSub = addsub;
     return true;
   },
+
+  userinput: function() {
+    console.log('userinput function');
+    const value = document.getElementById('inputField').value;
+    if(value !== addSub.answer) {
+      document.getElementById('result').innerHTML = "Try Again";
+    }
+    else{
+      document.getElementById('result').innerHTML = "Correct";
+    }
+    return true;
+  }
 });
 
-// Template.Filter_Page.onCreated(function onCreated() {
-//   this.subscribe(Interests.getPublicationName());
-//   this.subscribe(Profiles.getPublicationName());
-//   this.messageFlags = new ReactiveDict();
-//   this.messageFlags.set(selectedInterestsKey, undefined);
-// });
-
-Template.type_1_game.event({
+Template.type_1_game.events({
   'click .check-answer'(event) {
-
-    const answer = event.target.Answer.value;
-    console.log(answer);
-    console.log(addSub.answer);
-    if (answer == addSub.answer) {
-      console.log('We did it: num1+num2 = ');
-      console.log(addSub.userAnswer);
-    }
+   addSub.userAnswer = event.target.value;
+   console.log(addSub.userAnswer);
+   console.log('On input');
   },
+  'click .check-answer'(event, instance) {
+    addSub.userAnswer = event.target.value;
+    console.log(addSub.userAnswer);
+  },
+  'blur .test'(){
+    console.log('test');
+    console.log(document.getElementById('inputField').value);
+  },
+
 });
 
 // Template.Filter_Page.events({

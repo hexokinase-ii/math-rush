@@ -1,6 +1,7 @@
 <template name="Game1_Page">
   <div class="ui container" style="padding-top: 70px">
     {{#if Template.subscriptionsReady}}
+    <form class="check-answer {{ successClass }} {{ errorClass }}">
       <div style="margin-top: 10px" class="ui container">
         <div class="ui cards">
           {{#each addsub in addsubtract}}
@@ -14,6 +15,7 @@
           </a>
         </div>
       </div>
+    </form>
     {{/if}}
   </div>
 </template>

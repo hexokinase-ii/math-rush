@@ -1,6 +1,6 @@
 <template name="type_1_game">
   <div class="card">
-    <form class="check-answer {{ successClass }} {{ errorClass }}">
+    <form>
     <div class="content">
       <div class="ui grid">
         <div class="row">
@@ -15,18 +15,31 @@
           {{/if}}
           </p>
         </div>
-        <div class="row" style="padding-left: 20px; padding-bottom: 20px">
-            {{> Text_Form_Control label="Answer" placeholder="Type Answer" value=addsub.userAnswer errorMessage=(fieldError
-              "answer")}}
 
+        <div class="row" style="padding-left: 20px; padding-bottom: 20px">
+          <div class="field">
+            <input class="" type="text" name={{ addsub.answer }} id='Question' oninput="myFunction()"  value={{ addsub.userAnswer }}>
+          </div>
         </div>
+
       </div>
     </div>
-
-    <div class="extra content">
-      <button class="ui button check-answer" style="padding-bottom: 10px" type="click">Check Answer</button>
-    </div>
+      <div class="extra content">
+        <button class="ui button check-answer" style="padding-bottom: 10px" type="button">Check Answer</button>
+        <div class="ui label" id='result'></div>
+      </div>
     </form>
   </div>
+
+  <script>
+    function myFunction() {
+      if( this.document.getElementById('Question').name == document.getElementById('Question').value) {
+        this.document.getElementById('result').innerHTML = "Correct";
+      }
+      else{
+        this.document.getElementById('result').innerHTML = "Try Again";
+      }
+    }
+  </script>
 
 </template>
