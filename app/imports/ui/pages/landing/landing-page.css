@@ -25,7 +25,6 @@ th {
   text-align: center;
   font-size: 40px;
 }
-.ui.left.header {
-  padding-left: 1600px;
+.ui.centered.header {
   padding-top: 10px;
 }
